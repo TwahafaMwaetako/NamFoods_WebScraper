@@ -1,0 +1,12 @@
+{
+    "name": "Namibia Supermarket Price Checker",
+    "version": "1.0",
+    "description": "A web scraper that checks the prices of retails supermarket in Namibia",
+    "permissions": ["activeTab", "notifications"],
+    "content_scripts": [
+      {
+        "matches": ["https://shop.pnp.na/*", "https://www.foodloversmarket.co.za/*", "https://www.shoprite.co.za/*"],
+        "js": ["content.js"]
+      }
+    ]
+  }
